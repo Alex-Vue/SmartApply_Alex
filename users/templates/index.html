@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Apply</title>
+    {% load static %}
+    <link href="{% static 'css_index/index.css' %}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div>
+    <h1 class="header">Smart Apply</h1>
+</div>
+
+<br/>
+<br/>
+
+<form action="/" method="post">
+    {% csrf_token %}
+    <div id="card">
+          <button>
+            <a href="/sign-in">Sign in</a>
+          </button>
+          <button>
+            <a href="/sign-up">Sign up</a>
+          </button>
+    </div>
+</form>
+
+</body>
+  
+</html>

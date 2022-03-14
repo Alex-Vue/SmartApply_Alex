@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Fantasy;
+    <!--background-image: url(background.jpg) -->
+    background-size: cover;
+    background-position: center;
+}
+.sign-up{
+    width: 300px;
+    box-shadow: 0 0 20px 0 rgb(85, 103, 22);
+    background: #5a7950;
+    padding: 30px;
+    margin: 8% auto 0;
+
+    text-align: center;
+}
+
+.sign-up h1{
+    color: #032603;
+    margin-bottom: 30px;
+}

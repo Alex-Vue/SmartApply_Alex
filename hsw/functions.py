@@ -31,3 +31,4 @@ class Calendar(HTMLCalendar):
 	# filter events by year and month
 	def formatmonth(self, withyear=True):
 		events = Calendar.objects.filter(event_date__year=self.year, event_date__month=self.month)
+
