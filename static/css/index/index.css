@@ -1,31 +1,27 @@
-* {
-    box-sizing: border-box;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Fantasy;
+    background-size: contain;
+    background: url(notepad-g87a5d1b1c_1920.jpg) center;
 }
 
-body {
-    font-family: Arial;
-    padding: 10px;
-    background: #f1f1f1;
-}
-/* Add a card effect for articles */
-#card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    margin: auto;
-  width: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.header {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    text-align: center;
-    background: white;
-    border-radius: 5px;
-    font-size: 50px;
+.initial-page{
     width: 600px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: auto;
+    box-shadow: 0 0 40px 0 rgb(85, 103, 22);
+    background: #5a7950;
+    padding: 30px;
+    margin: 5% auto 0;
+
+    text-align: center;
+}
+
+.initial-page h1{
+    color: #032603;
+    margin-bottom: 15px;
+}
+
+.initial-page h1{
+    color: #032603;
+    margin-bottom: 15px;
 }
