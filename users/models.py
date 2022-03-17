@@ -6,10 +6,6 @@ class User(models.Model):
     Last_name = models.TextField()
     User_name = models.TextField(unique=True)
     password = models.TextField()
-   # Middle_name = models.TextField()
-   # Gender = models.TextField()
-   # Date_of_birth = models.DateTimeField(null=True)
-
 
 
 class Calendar(models.Model):

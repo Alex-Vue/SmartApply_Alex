@@ -21,12 +21,16 @@ def index(request):
             print(Calendar.objects.all())
         user = User.objects.get(id=user_id)
         messages.success(request, user.User_name)
-        return render(request, 'home/home.html')
+      
+        return render(request, "home/home.html", {"user": user.First_name})
         # return render(request, 'calendar/calendar.html')
     return render(request, 'index.html')
 
-def home(request):
-  return render(request, 'home/home.html')
+def home(View):
+  def get(self, request):
+    user = request.session["User_name"]
+    return render(request, "home/home.html", {"user": user})
+    
 
 def cal(request):
     # model = Calendar
@@ -95,3 +99,10 @@ def signin_view(request):
         else:
             messages.warning(request, "fail")
     return render(request, 'users/signIn.html',{})
+
+def files(request):
+  return render(request, 'home/importantFiles.html')
+
+def applications(request):
+  return render(request, 'home/processOfApp.html')
+  

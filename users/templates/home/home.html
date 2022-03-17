@@ -3,28 +3,36 @@
     <meta charset="UTF-8">
     <title>Smart Apply</title>
     {% load static %}
-    <link href="{% static 'css_index/index.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/home/home.css' %}" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <div style="position: absolute; height: calc(0% + 68px); width: calc(100% + 0px); left: calc(0% + 0px); top: calc(0% + 0px); opacity: 1; transition: opacity 0.2s ease 0s, max-width 0.2s ease 0s, max-height 0.2s ease 0s; max-width: 100vw; max-height: 100vh; border-radius: var(--border-radius-4); box-shadow: none;">
-      <header>
-        <button onclick>
-          <a href="/log-out">
-            Log out
-          </a>
-        </button>
-        <button>
-          <a href="/user-profile">
-            Profile
-          </a>
-        </button>
-        <button>
-          <a href="/cal">
-            Calendar
-          </a>
-        </button>
-      </header>
+    <div class="topnav">
+      
+      <button onclick style="float: right">
+        <a href="/log-out">
+          Log out
+        </a>
+      </button>
+      <div class="user" style="float: right">
+        <a href="/user-profile">{{ user }}</a>
+      </div>
+      <button>
+        <a href="/cal">
+          Calendar
+        </a>
+      </button>
+      <button onclick>
+        <a href="/important-files">
+          Important Files 
+        </a>
+      </button>
+      <button onclick>
+        <a href="/process-of-applications">
+          Process of Applications
+        </a>
+      </button>
     </div>
+    
     
   </body>
 </html>

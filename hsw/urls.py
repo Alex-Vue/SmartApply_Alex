@@ -18,11 +18,13 @@ from django.urls import path
 from users import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index),
-    path("sign-in/", views.signin_view),
-    path("sign-up/", views.signup_view),
-    path('log-out/', views.logout_view),
-    path('user-profile', views.profile_view),
-    path("cal", views.cal),
+  path('admin/', admin.site.urls),
+  path('', views.index),
+  path("sign-in/", views.signin_view),
+  path("sign-up/", views.signup_view),
+  path('log-out/', views.logout_view),
+  path('user-profile', views.profile_view),
+  path("cal", views.cal),
+  path("important-files", views.files),
+  path("process-of-applications", views.applications),
 ]
