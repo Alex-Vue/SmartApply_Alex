@@ -17,12 +17,16 @@ body{
 }
 
 .logo{
-    width:100px;
+    width: 100px;
     height: 100px;
     border-radois: 50%;
     position: absolute;
-    top: -50px;
+    top: 30px;
     left: calc(50% - 50px);
+    background: url(logo.jpg) center;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+
 }
 
 .sign-in h1{

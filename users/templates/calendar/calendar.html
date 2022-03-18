@@ -1,21 +1,40 @@
 {% load static %}
-<button onclick>
-    <a href="/log-out">
-    log-out
-    </a>
-</button>
-<button>
-    <a href="/user-profile">
-        view profile
-    </a>
-</button>
-<button>
-    <a href="/cal">
-        view calendar
-    </a>
-</button>
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Smart Apply</title>
 
-<link rel="stylesheet" href="{% static 'css_calendar/calendar.css' %}">
+    <link href="{% static 'css/calendar/calendar.css' %}" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="topnav">
+      
+      <button onclick style="float: right">
+        <a href="/log-out">
+          Log out
+        </a>
+      </button>
+      <button onclick style="float: right">
+        <a href="/user-profile">{{ user }}</a>
+      </button>
+      <button>
+        <a href="/cal">
+          Calendar
+        </a>
+      </button>
+      <button onclick>
+        <a href="/important-files">
+          Important Files 
+        </a>
+      </button>
+      <button onclick>
+        <a href="/process-of-applications">
+          Process of Applications
+        </a>
+      </button>
+    </div>
+
+<link rel="stylesheet" href="{% static 'css/calendar.css' %}">
 <div class="calendar">
     <div class="calendar_header">
         <div class="calendar_nav">
@@ -82,3 +101,6 @@
 </div>
 <script src="{% static 'js/calendar/calendar.js' %}"></script>
 <script src="{% static 'js/calendar/reserve.js' %}"></script>
+
+      </body>
+</html>

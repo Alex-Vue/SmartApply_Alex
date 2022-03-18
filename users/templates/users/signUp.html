@@ -3,7 +3,7 @@
 <head>
     <title>Sign Up Form
     </title>
-    <link rel="stylesheet" href="{% static 'css_users/signUp.css' %}">
+    <link rel="stylesheet" href="{% static 'css/users/signUp.css' %}">
 </head>
 
 <body>
@@ -12,16 +12,19 @@
 
 
 <form action="" method="post" style="display:flex;flex-direction:column;gap:32px;">
-    <input name="firstname" type="text" placeholder="First Name">
-    <input name="lastname" type="text" placeholder="Last Name">
-    <input name="username" type="text" placeholder="Username">
-    <input name="password" type="password" placeholder="Password">
-
+   <p> First Name: </p>
+    <input name="firstname" type="text" placeholder="Enter First Name">
+    <p> Last Name: </p>
+    <input name="lastname" type="text" placeholder="Enter Last Name">
+    <p> Username: </p>
+    <input name="username" type="text" placeholder="Enter Username">
+   <p> Password: </p>
+    <input name="password" type="password" placeholder="Enter Password">
     <p><span><input type="checkbox"></span> I agree to the terms of service</p>
 <input type="submit" value="Sign Up!">
     <p class="or">OR</p>
-    <p> Do you already have an account? <a href="/sign-in/">Sign in</a></p>
 </form>
+    <p> Do you already have an account? <a href="/sign-in/">Sign in</a></p>
     </div>
 </body>
 </html>

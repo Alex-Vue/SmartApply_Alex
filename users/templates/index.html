@@ -1,30 +1,26 @@
+{% load static %}
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Smart Apply</title>
-    {% load static %}
-    <link href="{% static 'css/index/index.css' %}" rel="stylesheet" type="text/css"/>
+    <title>
+        Initial Page
+    </title>
+        <link rel="stylesheet" href="{% static 'css/index/index.css' %}">
 </head>
+
 <body>
-<div>
-    <h1 class="header">Smart Apply</h1>
+<div class="initial-page">
+<h1>
+    Welcome to SmartApply
+</h1>
+    <h2>
+        An App to get Everything Application Related Done in One Place
+    </h2>
+    <p> Is it your first time here? Sign up! </p>
+    <button><a href="/sign-up">sign-up</a> </button>
+    <p> If you are not new, sign in! </p>
+    <button> <a href="/sign-in">sign-in</a> </button>
+
 </div>
-
-<br/>
-<br/>
-
-<form action="/" method="post">
-    {% csrf_token %}
-    <div id="card">
-          <button>
-            <a href="/sign-in">Sign in</a>
-          </button>
-          <button>
-            <a href="/sign-up">Sign up</a>
-          </button>
-    </div>
-</form>
-
 </body>
-  
+
 </html>

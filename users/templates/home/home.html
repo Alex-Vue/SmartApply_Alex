@@ -1,9 +1,10 @@
-<html>
+{% load static %}
+<!DOCTYPE html>
   <head>
     <meta charset="UTF-8">
     <title>Smart Apply</title>
-    {% load static %}
-    <link href="{% static 'css/home/home.css' %}" rel="stylesheet" type="text/css"/>
+
+    <link href="{% static 'css/index/home.css' %}" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <div class="topnav">
@@ -13,9 +14,9 @@
           Log out
         </a>
       </button>
-      <div class="user" style="float: right">
+      <button onclick style="float: right">
         <a href="/user-profile">{{ user }}</a>
-      </div>
+      </button>
       <button>
         <a href="/cal">
           Calendar
@@ -32,7 +33,5 @@
         </a>
       </button>
     </div>
-    
-    
   </body>
 </html>

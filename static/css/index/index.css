@@ -2,8 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: Fantasy;
-    background-size: contain;
-    background: url(notepad-g87a5d1b1c_1920.jpg) center;
+    background-size: cover;
+    background: url(glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg) center;
 }
 
 .initial-page{
