@@ -3,12 +3,13 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.http import JsonResponse
-from users.models import User, Calendar
+from users.models import User, Calendar, Document
 from django.shortcuts import render
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 from django import forms
 from users.forms import DocumentForm
+
 #
 # currently working on uploading a file w/ https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html
 #
@@ -168,12 +169,13 @@ def files(request):
         if form.is_valid():
             form.save()
             return render(request, 'home/importantFiles.html', {
-        'form': form
+        'uploads': Document.objects.all()
     })
     else:
         form = DocumentForm()
     return render(request, 'home/importantFiles.html', {
-        'form': form
+        'form': form,
+        'uploads': Document.objects.all()
     })
 
 def applications(request):
