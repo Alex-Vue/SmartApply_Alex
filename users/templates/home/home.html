@@ -15,7 +15,7 @@
         </a>
       </button>
       <button onclick style="float: right">
-        <a href="/user-profile">{{ user }}</a>
+        <a href="/user-profile">{{ request.session.user.User_name }}</a>
       </button>
       <button>
         <a href="/cal">
@@ -30,6 +30,11 @@
       <button onclick>
         <a href="/process-of-applications">
           Process of Applications
+        </a>
+      </button>
+      <button onclick>
+        <a href="/app-org">
+          Application Organizer
         </a>
       </button>
     </div>

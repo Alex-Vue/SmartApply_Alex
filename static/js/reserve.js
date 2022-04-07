@@ -15,9 +15,22 @@ const dateFunc = ()=>{
     const month = document.querySelector('.month');
     dates.forEach((i)=>{
         i.addEventListener('click', ()=>{
-             resvYear.textContent = year.textContent;
-                resvMonth.textContent=month.textContent;
-                resvDay.textContent= i.textContent.split('EVENT')[0];
+            resvYear.textContent = year.textContent;
+            resvMonth.textContent=month.textContent;
+            resvDay.textContent= i.textContent.split('EVENT')[0];
+            /////////////////////////////////////////////////////////////
+            var y = year.textContent;
+            var m = month.textContent;
+            var d = i.textContent.split('EVENT')[0].trim();
+            if(m.length != 2){
+                m = '0' + m;
+            }
+            if(d.length != 2){
+                d = '0' + d;
+            }
+            document.getElementById("onlydatetime").value = y + '-' + m + '-' + d;
+            ListCal();
+            /////////////////////////////////////////////////////////////
             if(i.classList.contains('other') || i.classList.contains('selected')){
                 dates.forEach((ig)=>{ig.classList.remove('selected');});
                 i.classList.remove('selected');

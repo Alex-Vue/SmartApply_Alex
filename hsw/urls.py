@@ -23,8 +23,11 @@ urlpatterns = [
   path("sign-in/", views.signin_view),
   path("sign-up/", views.signup_view),
   path('log-out/', views.logout_view),
+  path('home', views.home),
   path('user-profile', views.profile_view),
   path("cal", views.cal),
   path("important-files", views.files),
   path("process-of-applications", views.applications),
+  path("resv_list/", views.ajax_resv_list),
+  path("app-org", views.app_org),
 ]
